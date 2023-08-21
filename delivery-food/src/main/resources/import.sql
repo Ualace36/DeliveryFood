@@ -1,9 +1,9 @@
 
-INSERT INTO cozinha (nome) VALUES ('Tailandesa');
-INSERT INTO cozinha (nome) VALUES ('Japonesa');
-INSERT INTO cozinha (nome) VALUES ('Italiana');
-INSERT INTO cozinha (nome) VALUES ('Brasileira');
+INSERT INTO cozinha (id, nome) VALUES (1, 'Tailandesa');
+INSERT INTO cozinha (id, nome) VALUES (2, 'Japonesa');
+INSERT INTO cozinha (id, nome) VALUES (3, 'Italiana');
+INSERT INTO cozinha (id, nome) VALUES (4, 'Brasileira');
 
-INSERT INTO restaurante (nome, taxa_frete) VALUES ('Thai Gourmet', 10);
-INSERT INTO restaurante (nome, taxa_frete) VALUES ('Boteco do Gaucho', 15);
-INSERT INTO restaurante (nome, taxa_frete) VALUES ('Helena Bratchion', 8);
+INSERT INTO restaurante (id, nome, taxa_frete, cozinha_id) VALUES (1, 'Thai Gourmet', 10, 1);
+INSERT INTO restaurante (id, nome, taxa_frete, cozinha_id) VALUES (2, 'Boteco do Gaucho', 15, 4);
+INSERT INTO restaurante (id, nome, taxa_frete, cozinha_id) VALUES (3, 'Helena Bratchion', 8, 2);
