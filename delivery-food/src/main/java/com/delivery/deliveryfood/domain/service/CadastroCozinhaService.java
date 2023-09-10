@@ -27,7 +27,7 @@ public class CadastroCozinhaService {
 			throw new EntidadeNaoEncontradaException(String.format("Cozinha de código %d não existe. Vincule o Restaurante a uma cozinha existente.", id));
 		}
 		catch(DataIntegrityViolationException e) {
-			throw new EntidadeEmUsoException(String.format("Cozinha de código %d não pode ser removida, pois está em uso.", id));
+			throw new EntidadeEmUsoException(String.format("Erro do usuário da API: Conflict. Cozinha de código %d não pode ser removida, pois está em uso.", id));
 		}
 	}
 }
