@@ -37,6 +37,8 @@ public class CozinhaController {
 	public List<Cozinha> lista() {
 		return cozinhaRepository.listar();
 	}
+    
+   
     @GetMapping("/{cozinhaId}")
     public ResponseEntity<Cozinha>  buscar(@PathVariable("cozinhaId") Long id) {
     	Cozinha cozinha = cozinhaRepository.buscar(id);
